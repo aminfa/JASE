@@ -1,0 +1,8 @@
+imp =  localhost:5000/sklearn.preprocessing.Imputer::__construct({missing_values="NaN", strategy="mean", axis=0});
+empty = imp::fit({i1=i1});
+i2_ = imp::transform({i1=i2});
+i3_ = imp::transform({i1=i3});
+forestmodel = localhost:8000/sklearn.ensemble.RandomForestClassifier::__construct({,}); 
+empty = forestmodel::train({i1=i2_});
+predictions = forestmodel::predict({i1=i3_})
+Accuracy = forestmodel::predict_and_score({i1=i3_})

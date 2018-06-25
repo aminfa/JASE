@@ -1,0 +1,3 @@
+model = localhost:5000/sklearn.ensemble.RandomForestClassifier::__construct({,});  
+empty = model::fit({X=training_data});    
+prediction = model::predict({X=prediction_data});

@@ -1,0 +1,5 @@
+f1 = localhost:5000/plainlib.package1.b.B::__construct({a = 1, b = 2});
+f2 = f1::calc({c=3});
+f5 = f1::calc2({a=3});
+f3 = plainlib.package1.b.B::random({,});
+f4 = f3::calc({c=1});

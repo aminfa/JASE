@@ -1,0 +1,3 @@
+neuralnet =  localhost:8000/weka.classifiers.trees.RandomTree::__construct({,});
+empty = neuralnet::train({i1=i1});
+Predictions = neuralnet::predict({i1=i2});

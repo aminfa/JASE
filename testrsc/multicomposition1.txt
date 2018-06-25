@@ -1,0 +1,6 @@
+p1 = localhost:5000/plainlib.package1.b.B::__construct({a = 1, b = 2});
+p2 = p1::calc({c=3});
+s1 = 127.0.0.1:8000/Catalano.Imaging.Filters.Crop::__construct({i1=0, i2=0, i3=100, i4=100});
+fb2 = s1::ApplyInPlace({i1=i1});
+s2 = 127.0.0.1:8000/Catalano.Imaging.Filters.Resize::__construct({i1=25, i2=25});
+fb3 = s2::applyInPlace({i1=fb2});
